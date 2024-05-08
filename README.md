@@ -15,4 +15,4 @@ After pushing an update you can tag it with the following command to trigger the
 2. ```git push origin --tags ```
 
 ### Importing the package
-1. Install with: ```pip install --index-url https://pypi.org/project/ --no-deps lib-version-remla```
+1. Install with: ```pip install lib-version-remla```

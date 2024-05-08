@@ -1,7 +1,5 @@
 from importlib.metadata import version, PackageNotFoundError
 
-version = "0.0.1"
-
 class VersionUtil:
     def get_version():
         try:
