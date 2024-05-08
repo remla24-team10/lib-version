@@ -21,13 +21,15 @@ jobs:
       - name: Install Poetry
         run: |
           python -m pip install poetry 
-          pip install poetry setuptools setuptools_scm wheel twine
+          pip install poetry setuptools setuptools_scm wheel twine poetry-dynamic-versioning
 
       - name: Install project dependencies
         run: poetry install
 
       - name: Build package
-        run: poetry build
+        run: |
+          poetry self add poetry-dynamic-versioning
+          poetry build
 
       - name: Publish package to PyPI
         run: |
