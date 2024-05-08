@@ -20,9 +20,8 @@ jobs:
 
       - name: Install Poetry
         run: |
-          curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
-          source $HOME/.poetry/env
-          poetry --version
+          python -m pip install poetry 
+          pip install poetry setuptools setuptools_scm wheel twine
 
       - name: Install project dependencies
         run: poetry install
