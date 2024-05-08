@@ -1,9 +1,10 @@
 from importlib.metadata import version, PackageNotFoundError
+import lib_version_remla
 
 class VersionUtil:
     @staticmethod
     def get_version():
         try:
-            return version(__name__)
+            return version('lib_version_remla')
         except PackageNotFoundError:
-            return version
+            print('Package not found')

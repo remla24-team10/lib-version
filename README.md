@@ -11,7 +11,7 @@ To upload to PyPi you need to have access to the API key, which is stored in the
 
 ### Updating the package via workflow
 After pushing an update you can tag it with the following command to trigger the workflow.
-1. ```git tag v0.0.n```
+1. ```git tag version``, where version is the version number. E.g. ```git tag 0.0.1`
 2. ```git push origin --tags ```
 
 ### Importing the package
