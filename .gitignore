@@ -1,2 +1,4 @@
 dist/
 venv/
+src/lib_version_remla/__pycache__/
+src/lib_version_remla/__pycache__/
